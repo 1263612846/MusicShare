@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="photo-album" extends="training-default" namespace="/photo/album">
+		<action name="album" class="neo.photo.action.AlbumAction">
+			<result name="album">album.ftl</result>
+			<result name="viewAdd">add.ftl</result>
+			<result name="center">center.ftl</result>
+			<result name="manageAlbum">manageAlbum.ftl</result>
+			<result name="editAlbum">editAlbum.ftl</result>
+			<result name="view">view.ftl</result>
+			<result name="albumlist">albumlist.ftl</result>
+			<result name="user">user.ftl</result>
+			<result name="letter">letter.ftl</result>
+			<result name="viewLetter">viewLetter.ftl</result>
+			<result name="type">type.ftl</result>
+			<result name="viewType">viewType.ftl</result>
+			<result name="manageType">manageType.ftl</result>
+			<result name="viewAddType">viewAddType.ftl</result>
+			<result name="editType">editType.ftl</result>
+			<result name="admin">admin.ftl</result>
+			<result name="index">index.ftl</result>
+			<result name="myCenter">myCenter.ftl</result>
+			<result name="manageUser">manageUser.ftl</result>
+			<result name="adminManageAlbum">adminManageAlbum.ftl</result>
+			<result name="adminView">adminView.ftl</result>
+			<result name="adminEditAlbum">adminEditAlbum.ftl</result>
+			<result name="reg">reg.ftl</result>
+		</action>
+	</package>
+</struts>

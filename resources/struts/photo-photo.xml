@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="photo-photo" extends="training-default" namespace="/photo/pho">
+		<action name="music" class="neo.photo.action.PhotoAction">
+		    <result name="viewAdd">add.ftl</result>
+		    <result name="editMusic">editMusic.ftl</result>
+		    <result name="viewPlay">viewPlay.ftl</result>
+		    <result name="play">play.ftl</result>
+		    <result name="collect">collect.ftl</result>
+		    <result name="search">search.ftl</result>
+		    <result name="result">result.ftl</result>
+		    <result name="adminEditMusic">adminEditMusic.ftl</result>
+		</action>
+		<action name="music_add" class="neo.photo.action.PhotoAction" method="add">
+		    <interceptor-ref name="fileUploadStack"></interceptor-ref>
+		</action>
+	</package>
+</struts>
+
+
+
+
+
